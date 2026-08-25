@@ -36,6 +36,20 @@ const services = [
       "Skilled investigators providing tangible evidence through surveillance, background checks, and forensics.",
     icon: "search",
   },
+  {
+    number: "06",
+    title: "Dog Security Service",
+    description:
+      "Professionally trained security dogs for property patrol, detection, and rapid-response protection.",
+    icon: "dog",
+  },
+  {
+    number: "07",
+    title: "Automatic Gates",
+    description:
+      "Remote-controlled gate systems with smart device integration for enhanced home and office access.",
+    icon: "gate",
+  },
 ];
 
 const packages = [
@@ -190,6 +204,44 @@ function ServiceIcon({ type }: { type: string }) {
         <rect x="5" y="10" width="14" height="10" rx="2" />
         <path d="M8 10V7a4 4 0 0 1 8 0v3" />
         <circle cx="12" cy="15" r="1" />
+      </svg>
+    );
+  }
+
+  if (type === "dog") {
+    return (
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.7"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M7 9.5 5.5 6 8 4l2.5 2h3L16 4l2.5 2L17 9.5" />
+        <path d="M7 9.5c-1 1.3-1.5 3-1.5 5v2.5c0 1.7 1.3 3 3 3h7c1.7 0 3-1.3 3-3v-2.5c0-2-.5-3.7-1.5-5" />
+        <circle cx="9" cy="11" r=".7" />
+        <circle cx="15" cy="11" r=".7" />
+        <path d="M10 14c1.2 1 2.8 1 4 0" />
+      </svg>
+    );
+  }
+
+  if (type === "gate") {
+    return (
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.7"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M4 20V6h7v14" />
+        <path d="M13 20V6h7v14" />
+        <path d="M7 6V3h10v3" />
+        <path d="M4 20h16" />
+        <path d="M7 9h4M7 13h4M13 9h4M13 13h4" />
       </svg>
     );
   }
@@ -471,6 +523,26 @@ export default function Home() {
                 </a>
               </article>
             ))}
+          </div>
+
+          <div className="mt-10 rounded-2xl border border-slate-200 bg-[#f4f6f3] px-6 py-7 text-center">
+            <div className="text-xs font-bold uppercase tracking-[0.22em] text-[#a18132]">
+              Also Available
+            </div>
+
+            <div className="mt-4 flex flex-wrap items-center justify-center gap-x-5 gap-y-3 text-sm font-semibold text-[#10231e]">
+              <span>Cyber Security</span>
+              <span className="text-[#d6b25e]">•</span>
+              <span>VIP Protection</span>
+              <span className="text-[#d6b25e]">•</span>
+              <span>Security Audits</span>
+              <span className="text-[#d6b25e]">•</span>
+              <span>Alarm Response</span>
+              <span className="text-[#d6b25e]">•</span>
+              <span>Asset Tracking</span>
+              <span className="text-[#d6b25e]">•</span>
+              <span>Security Consulting</span>
+            </div>
           </div>
         </div>
       </section>
