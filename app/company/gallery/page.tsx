@@ -3,52 +3,39 @@ const galleryItems = [
     number: "01",
     title: "Security Operations",
     category: "Security Services",
+    image: "/images/services/guards.png",
   },
   {
     number: "02",
     title: "CCTV Surveillance",
     category: "Electronic Security",
+    image: "/images/services/cctv.png",
   },
   {
     number: "03",
     title: "Access Control",
     category: "Technology",
+    image: "/images/services/access-control.png",
   },
   {
     number: "04",
     title: "Perimeter Protection",
     category: "Security Systems",
+    image: "/images/services/electric-fence.png",
   },
   {
     number: "05",
-    title: "Security Personnel",
-    category: "Manned Security",
+    title: "Fire & Safety Systems",
+    category: "Fire Protection",
+    image: "/images/services/fire-alarm.jpg",
   },
   {
     number: "06",
-    title: "Professional Protection",
-    category: "Corporate Security",
+    title: "Advanced Surveillance",
+    category: "Security Technology",
+    image: "/images/services/drone-uav.png",
   },
 ];
-
-function ImagePlaceholder({ number }: { number: string }) {
-  return (
-    <div className="relative flex h-64 items-center justify-center overflow-hidden bg-gradient-to-br from-[#10231e] via-[#17372e] to-[#071b16]">
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full border-[25px] border-[#d6b25e]" />
-        <div className="absolute -bottom-16 -left-16 h-48 w-48 rounded-full border-[30px] border-white/20" />
-      </div>
-
-      <div className="relative text-6xl font-extrabold text-white/10">
-        {number}
-      </div>
-
-      <div className="absolute bottom-5 left-5 text-xs font-bold uppercase tracking-[0.2em] text-[#d6b25e]">
-        Privamax Security
-      </div>
-    </div>
-  );
-}
 
 export default function GalleryPage() {
   return (
@@ -90,8 +77,9 @@ export default function GalleryPage() {
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-slate-600">
-              Explore some of the areas in which Privamax delivers professional
-              security solutions across Kenya.
+              Explore some of the technologies, personnel, and security
+              solutions used by Privamax to protect people, property, and
+              businesses.
             </p>
           </div>
 
@@ -101,7 +89,23 @@ export default function GalleryPage() {
                 key={item.number}
                 className="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
               >
-                <ImagePlaceholder number={item.number} />
+                <div className="relative h-64 overflow-hidden bg-[#10231e]">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                  />
+
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#071b16]/75 via-transparent to-transparent" />
+
+                  <div className="absolute bottom-5 left-5 text-xs font-bold uppercase tracking-[0.2em] text-[#d6b25e]">
+                    Privamax Security
+                  </div>
+
+                  <div className="absolute right-5 top-5 rounded-full border border-white/20 bg-[#071b16]/70 px-3 py-1.5 text-xs font-bold text-white backdrop-blur-md">
+                    {item.number}
+                  </div>
+                </div>
 
                 <div className="p-7">
                   <div className="text-xs font-bold uppercase tracking-[0.18em] text-[#a18132]">

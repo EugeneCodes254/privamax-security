@@ -97,7 +97,7 @@ export default function AboutPage() {
         <section className="relative min-h-[560px] overflow-hidden">
           <div className="absolute inset-0">
             <img
-              src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=2200&q=85"
+              src="/images/company/team-md.png"
               alt="Privamax Security team"
               className="h-full w-full object-cover"
             />
@@ -166,7 +166,7 @@ export default function AboutPage() {
 
           <div className="relative overflow-hidden rounded-3xl bg-[#10231e]">
             <img
-              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=1200&q=85"
+              src="/images/company/team-admin.png"
               alt="Professional security management"
               className="h-[520px] w-full object-cover opacity-75"
             />
