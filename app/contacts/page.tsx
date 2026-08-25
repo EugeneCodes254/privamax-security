@@ -1,0 +1,355 @@
+function ArrowIcon() {
+  return (
+    <svg
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M5 12h14" />
+      <path d="m12 5 7 7-7 7" />
+    </svg>
+  );
+}
+
+function PhoneIcon() {
+  return (
+    <svg
+      width="21"
+      height="21"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92Z" />
+    </svg>
+  );
+}
+
+function MailIcon() {
+  return (
+    <svg
+      width="21"
+      height="21"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <rect x="3" y="5" width="18" height="14" rx="2" />
+      <path d="m3 7 9 6 9-6" />
+    </svg>
+  );
+}
+
+function LocationIcon() {
+  return (
+    <svg
+      width="21"
+      height="21"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" />
+      <circle cx="12" cy="10" r="2.5" />
+    </svg>
+  );
+}
+
+export default function ContactsPage() {
+  return (
+    <main className="overflow-hidden bg-white">
+      <section className="relative overflow-hidden bg-[#10231e] py-32 lg:py-40">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(214,178,94,0.18),transparent_35%)]" />
+        <div className="absolute -bottom-32 -left-32 h-80 w-80 rounded-full border-[50px] border-white/[0.03]" />
+
+        <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="max-w-4xl">
+            <div className="mb-6 flex items-center gap-3 text-sm font-bold uppercase tracking-[0.22em] text-[#d6b25e]">
+              <span className="h-px w-10 bg-[#d6b25e]" />
+              Contact Privamax
+            </div>
+
+            <h1 className="text-5xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
+              Let&apos;s make your security{" "}
+              <span className="text-[#d6b25e]">our priority.</span>
+            </h1>
+
+            <p className="mt-7 max-w-2xl text-lg leading-8 text-white/65 sm:text-xl">
+              Whether you need security personnel, electronic security
+              systems, investigations, or a complete security assessment,
+              our team is ready to help.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#f4f6f3] py-20 lg:py-28">
+        <div className="mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-[0.8fr_1.2fr] lg:px-8">
+          <div>
+            <div className="mb-5 flex items-center gap-3 text-sm font-bold uppercase tracking-[0.2em] text-[#a18132]">
+              <span className="h-px w-10 bg-[#a18132]" />
+              Get In Touch
+            </div>
+
+            <h2 className="text-4xl font-extrabold leading-tight tracking-tight text-[#10231e] sm:text-5xl">
+              Speak to our security team
+            </h2>
+
+            <p className="mt-6 max-w-xl text-lg leading-8 text-slate-600">
+              Contact us today and tell us what you need. Our team will help
+              you identify the right security solution for your home,
+              business, property, or organization.
+            </p>
+
+            <div className="mt-10 space-y-5">
+              <a
+                href="tel:+254733669260"
+                className="flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-5 transition hover:-translate-y-0.5 hover:shadow-lg"
+              >
+                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#10231e] text-[#d6b25e]">
+                  <PhoneIcon />
+                </span>
+
+                <div>
+                  <div className="text-xs font-bold uppercase tracking-[0.15em] text-slate-400">
+                    Call Us
+                  </div>
+                  <div className="mt-1 font-bold text-[#10231e]">
+                    +254 733 669 260
+                  </div>
+                </div>
+              </a>
+
+              <a
+                href="mailto:info@privamaxsecurity.co.ke"
+                className="flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-5 transition hover:-translate-y-0.5 hover:shadow-lg"
+              >
+                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#10231e] text-[#d6b25e]">
+                  <MailIcon />
+                </span>
+
+                <div>
+                  <div className="text-xs font-bold uppercase tracking-[0.15em] text-slate-400">
+                    Email Us
+                  </div>
+                  <div className="mt-1 font-bold text-[#10231e]">
+                    info@privamaxsecurity.co.ke
+                  </div>
+                </div>
+              </a>
+
+              <div className="flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-5">
+                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#10231e] text-[#d6b25e]">
+                  <LocationIcon />
+                </span>
+
+                <div>
+                  <div className="text-xs font-bold uppercase tracking-[0.15em] text-slate-400">
+                    Service Area
+                  </div>
+                  <div className="mt-1 font-bold text-[#10231e]">
+                    Kenya &amp; East Africa
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="rounded-3xl bg-white p-7 shadow-xl sm:p-9">
+            <div className="mb-8">
+              <div className="text-xs font-bold uppercase tracking-[0.18em] text-[#a18132]">
+                Request a Quote
+              </div>
+
+              <h3 className="mt-2 text-3xl font-extrabold text-[#10231e]">
+                Tell us about your security needs
+              </h3>
+
+              <p className="mt-3 leading-7 text-slate-500">
+                Complete the form and our team will get back to you.
+              </p>
+            </div>
+
+            <form action="mailto:info@privamaxsecurity.co.ke" method="post" encType="text/plain" className="space-y-5">
+              <div className="grid gap-5 sm:grid-cols-2">
+                <div>
+                  <label
+                    htmlFor="name"
+                    className="mb-2 block text-sm font-bold text-[#10231e]"
+                  >
+                    Full Name
+                  </label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    required
+                    placeholder="Your name"
+                    className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3.5 text-sm outline-none transition placeholder:text-slate-400 focus:border-[#d6b25e] focus:bg-white"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="phone"
+                    className="mb-2 block text-sm font-bold text-[#10231e]"
+                  >
+                    Phone Number
+                  </label>
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    required
+                    placeholder="+254..."
+                    className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3.5 text-sm outline-none transition placeholder:text-slate-400 focus:border-[#d6b25e] focus:bg-white"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label
+                  htmlFor="email"
+                  className="mb-2 block text-sm font-bold text-[#10231e]"
+                >
+                  Email Address
+                </label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  required
+                  placeholder="you@example.com"
+                  className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3.5 text-sm outline-none transition placeholder:text-slate-400 focus:border-[#d6b25e] focus:bg-white"
+                />
+              </div>
+
+              <div>
+                <label
+                  htmlFor="service"
+                  className="mb-2 block text-sm font-bold text-[#10231e]"
+                >
+                  Service Required
+                </label>
+                <select
+                  id="service"
+                  name="service"
+                  defaultValue=""
+                  className="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3.5 text-sm outline-none transition focus:border-[#d6b25e] focus:bg-white"
+                >
+                  <option value="" disabled>
+                    Select a service
+                  </option>
+                  <option>Security Guarding</option>
+                  <option>CCTV Surveillance</option>
+                  <option>Access Control</option>
+                  <option>Electric Fencing</option>
+                  <option>Fire Detection &amp; Alarm</option>
+                  <option>Private Investigation</option>
+                  <option>Cyber Security</option>
+                  <option>Vehicle &amp; Asset Tracking</option>
+                  <option>Security Consultancy</option>
+                  <option>Other</option>
+                </select>
+              </div>
+
+              <div>
+                <label
+                  htmlFor="message"
+                  className="mb-2 block text-sm font-bold text-[#10231e]"
+                >
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  rows={5}
+                  placeholder="Tell us about your security requirements..."
+                  className="w-full resize-none rounded-xl border border-slate-200 bg-slate-50 px-4 py-3.5 text-sm outline-none transition placeholder:text-slate-400 focus:border-[#d6b25e] focus:bg-white"
+                />
+              </div>
+
+              <button
+                type="submit"
+                className="inline-flex w-full items-center justify-center gap-3 rounded-full bg-[#10231e] px-7 py-4 font-bold text-white transition hover:bg-[#d6b25e] hover:text-[#10231e]"
+              >
+                Send Enquiry
+                <ArrowIcon />
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#10231e] py-20 lg:py-24">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="grid gap-10 md:grid-cols-3">
+            <div>
+              <div className="text-4xl font-extrabold text-white">
+                24/7
+              </div>
+              <p className="mt-2 text-sm uppercase tracking-[0.16em] text-white/45">
+                Response Team
+              </p>
+            </div>
+
+            <div>
+              <div className="text-4xl font-extrabold text-[#d6b25e]">
+                Kenya
+              </div>
+              <p className="mt-2 text-sm uppercase tracking-[0.16em] text-white/45">
+                Service Coverage
+              </p>
+            </div>
+
+            <div>
+              <div className="text-4xl font-extrabold text-white">
+                Since 2016
+              </div>
+              <p className="mt-2 text-sm uppercase tracking-[0.16em] text-white/45">
+                Security Experience
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-[#d6b25e] py-20">
+        <div className="mx-auto flex max-w-7xl flex-col gap-8 px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+          <div>
+            <div className="text-sm font-bold uppercase tracking-[0.2em] text-[#10231e]/60">
+              Need Immediate Assistance?
+            </div>
+
+            <h2 className="mt-3 text-4xl font-extrabold text-[#10231e] sm:text-5xl">
+              Speak to Privamax today.
+            </h2>
+          </div>
+
+          <a
+            href="tel:+254733669260"
+            className="inline-flex shrink-0 items-center justify-center gap-3 rounded-full bg-[#10231e] px-7 py-4 font-bold text-white transition hover:bg-white hover:text-[#10231e]"
+          >
+            Call +254 733 669 260
+            <ArrowIcon />
+          </a>
+        </div>
+      </section>
+    </main>
+  );
+}
