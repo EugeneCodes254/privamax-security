@@ -259,7 +259,10 @@ export default function Header() {
           {/* Mobile Company */}
           <button
             type="button"
-            onClick={() => setCompanyOpen(!companyOpen)}
+            onClick={() => {
+              setCompanyOpen(!companyOpen);
+              setServicesOpen(false);
+            }}
             className="flex items-center justify-between rounded-xl px-4 py-3.5 text-left text-sm font-medium text-white/80 transition hover:bg-white/10 hover:text-white"
           >
             Company
@@ -303,7 +306,10 @@ export default function Header() {
           {/* Mobile Services */}
           <button
             type="button"
-            onClick={() => setServicesOpen(!servicesOpen)}
+            onClick={() => {
+              setServicesOpen(!servicesOpen);
+              setCompanyOpen(false);
+            }}
             className="flex items-center justify-between rounded-xl px-4 py-3.5 text-left text-sm font-medium text-white/80 transition hover:bg-white/10 hover:text-white"
           >
             Services
