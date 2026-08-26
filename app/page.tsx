@@ -285,7 +285,7 @@ export default function Home() {
       <section className="relative min-h-[720px] overflow-hidden bg-[#10251f]">
         <div className="absolute inset-0">
           <img
-            src="/images/company/logo.jpg"
+            src="/images/hero/TRUCK-1.JPG"
             alt="Professional security team"
             className="h-full w-full object-cover"
           />
