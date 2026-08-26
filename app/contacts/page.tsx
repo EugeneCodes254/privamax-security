@@ -1,3 +1,7 @@
+"use client";
+
+import { FormEvent, useState } from "react";
+
 function ArrowIcon() {
   return (
     <svg
@@ -70,6 +74,9 @@ function LocationIcon() {
 }
 
 export default function ContactsPage() {
+  const [submitting, setSubmitting] = useState(false);
+  const [formStatus, setFormStatus] = useState<"idle" | "success" | "error">("idle");
+
   return (
     <main className="overflow-hidden bg-white">
       <section className="relative overflow-hidden bg-[#10231e] py-32 lg:py-40">
@@ -184,7 +191,44 @@ export default function ContactsPage() {
               </p>
             </div>
 
-            <form action="mailto:info@privamaxsecurity.com" method="post" encType="text/plain" className="space-y-5">
+            <form
+              className="space-y-5"
+              onSubmit={async (event: FormEvent<HTMLFormElement>) => {
+                event.preventDefault();
+                setSubmitting(true);
+                setFormStatus("idle");
+
+                const form = event.currentTarget;
+                const formData = new FormData(form);
+
+                try {
+                  const response = await fetch("/api/contact", {
+                    method: "POST",
+                    headers: {
+                      "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                      name: formData.get("name"),
+                      phone: formData.get("phone"),
+                      email: formData.get("email"),
+                      service: formData.get("service"),
+                      message: formData.get("message"),
+                    }),
+                  });
+
+                  if (!response.ok) {
+                    throw new Error("Failed to send enquiry");
+                  }
+
+                  form.reset();
+                  setFormStatus("success");
+                } catch {
+                  setFormStatus("error");
+                } finally {
+                  setSubmitting(false);
+                }
+              }}
+            >
               <div className="grid gap-5 sm:grid-cols-2">
                 <div>
                   <label
@@ -284,12 +328,31 @@ export default function ContactsPage() {
                 />
               </div>
 
+              {formStatus === "success" && (
+                <div
+                  role="status"
+                  className="rounded-xl border border-green-200 bg-green-50 px-4 py-3 text-sm font-semibold text-green-800"
+                >
+                  Thank you. Your enquiry has been sent successfully. Our team will get back to you.
+                </div>
+              )}
+
+              {formStatus === "error" && (
+                <div
+                  role="alert"
+                  className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm font-semibold text-red-800"
+                >
+                  We could not send your enquiry. Please try again or contact us directly at info@privamaxsecurity.com.
+                </div>
+              )}
+
               <button
                 type="submit"
-                className="inline-flex w-full items-center justify-center gap-3 rounded-full bg-[#10231e] px-7 py-4 font-bold text-white transition hover:bg-[#d6b25e] hover:text-[#10231e]"
+                disabled={submitting}
+                className="inline-flex w-full items-center justify-center gap-3 rounded-full bg-[#10231e] px-7 py-4 font-bold text-white transition hover:bg-[#d6b25e] hover:text-[#10231e] disabled:cursor-not-allowed disabled:opacity-60"
               >
-                Send Enquiry
-                <ArrowIcon />
+                {submitting ? "Sending..." : "Send Enquiry"}
+                {!submitting && <ArrowIcon />}
               </button>
             </form>
           </div>
