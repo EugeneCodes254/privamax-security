@@ -273,8 +273,8 @@ export default function Home() {
             <a href="tel:+254733669260" className="transition hover:text-[#d6b25e]">
               +254 733 669 260
             </a>
-            <a href="mailto:info@privamaxsecurity.co.ke" className="transition hover:text-[#d6b25e]">
-              info@privamaxsecurity.co.ke
+            <a href="mailto:info@privamaxsecurity.com" className="transition hover:text-[#d6b25e]">
+              info@privamaxsecurity.com
             </a>
           </div>
         </div>
@@ -783,15 +783,12 @@ export default function Home() {
                 +254 202 070 030
               </a>
 
-              <a className="block hover:text-white" href="tel:+256782209221">
-                +256 782 209 221
-              </a>
 
               <a
                 className="block hover:text-white"
-                href="mailto:info@privamaxsecurity.co.ke"
+                href="mailto:info@privamaxsecurity.com"
               >
-                info@privamaxsecurity.co.ke
+                info@privamaxsecurity.com
               </a>
             </div>
           </div>

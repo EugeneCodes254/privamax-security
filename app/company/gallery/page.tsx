@@ -1,39 +1,48 @@
 const galleryItems = [
   {
-    number: "01",
-    title: "Security Operations",
-    category: "Security Services",
-    image: "/images/services/guards.png",
-  },
-  {
-    number: "02",
+    image: "/images/services/cctv.png",
     title: "CCTV Surveillance",
     category: "Electronic Security",
-    image: "/images/services/cctv.png",
   },
   {
-    number: "03",
-    title: "Access Control",
-    category: "Technology",
-    image: "/images/services/access-control.png",
-  },
-  {
-    number: "04",
-    title: "Perimeter Protection",
-    category: "Security Systems",
     image: "/images/services/electric-fence.png",
+    title: "Electric Fence",
+    category: "Perimeter Protection",
   },
   {
-    number: "05",
-    title: "Fire & Safety Systems",
-    category: "Fire Protection",
     image: "/images/services/fire-alarm.jpg",
+    title: "Fire Alarm Systems",
+    category: "Fire & Safety",
   },
   {
-    number: "06",
-    title: "Advanced Surveillance",
+    image: "/images/services/access-control.png",
+    title: "Access Control",
     category: "Security Technology",
+  },
+  {
+    image: "/images/services/guards.png",
+    title: "Security Personnel",
+    category: "Manned Security",
+  },
+  {
     image: "/images/services/drone-uav.png",
+    title: "Drone Security",
+    category: "Advanced Security",
+  },
+  {
+    image: "/images/services/bwc-camera.png",
+    title: "Body-Worn Cameras",
+    category: "Security Technology",
+  },
+  {
+    image: "/images/hero/satellite-crop.png",
+    title: "Advanced Surveillance",
+    category: "Security Operations",
+  },
+  {
+    image: "/images/hero/TRUCK-1.JPG",
+    title: "Asset & Vehicle Tracking",
+    category: "Tracking Solutions",
   },
 ];
 
@@ -55,8 +64,8 @@ export default function GalleryPage() {
             </h1>
 
             <p className="mt-7 max-w-2xl text-lg leading-8 text-white/65 sm:text-xl">
-              A look at our security operations, technology, personnel, and
-              professional protection solutions.
+              Explore Privamax security technology, personnel and protection
+              solutions serving clients across Kenya.
             </p>
           </div>
         </div>
@@ -73,37 +82,35 @@ export default function GalleryPage() {
             </div>
 
             <h2 className="text-4xl font-extrabold leading-tight tracking-tight text-[#10231e] sm:text-5xl">
-              Protecting people, property and business
+              Professional security. Modern solutions.
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-slate-600">
-              Explore some of the technologies, personnel, and security
-              solutions used by Privamax to protect people, property, and
-              businesses.
+              From electronic surveillance and perimeter protection to
+              professional security personnel and advanced tracking
+              technologies.
             </p>
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {galleryItems.map((item) => (
               <article
-                key={item.number}
+                key={item.title}
                 className="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl"
               >
-                <div className="relative h-64 overflow-hidden bg-[#10231e]">
+                <div className="relative h-64 overflow-hidden bg-[#071b16]">
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                   />
 
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#071b16]/75 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#071b16]/80 via-transparent to-transparent opacity-80" />
 
-                  <div className="absolute bottom-5 left-5 text-xs font-bold uppercase tracking-[0.2em] text-[#d6b25e]">
-                    Privamax Security
-                  </div>
-
-                  <div className="absolute right-5 top-5 rounded-full border border-white/20 bg-[#071b16]/70 px-3 py-1.5 text-xs font-bold text-white backdrop-blur-md">
-                    {item.number}
+                  <div className="absolute bottom-5 left-5">
+                    <div className="text-xs font-bold uppercase tracking-[0.18em] text-[#d6b25e]">
+                      Privamax Security
+                    </div>
                   </div>
                 </div>
 
@@ -134,13 +141,13 @@ export default function GalleryPage() {
             </div>
 
             <h2 className="text-4xl font-extrabold leading-tight text-white sm:text-5xl">
-              Professional security. Modern solutions.
+              Protecting people, property and business.
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-white/60">
-              From physical protection to advanced electronic security
-              systems, our teams are ready to help you create a safer
-              environment.
+              Our integrated security solutions combine professional
+              personnel, technology and intelligence to help keep your
+              environment secure.
             </p>
           </div>
         </div>

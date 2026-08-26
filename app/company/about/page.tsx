@@ -82,10 +82,10 @@ export default function AboutPage() {
             </a>
 
             <a
-              href="mailto:info@privamaxsecurity.co.ke"
+              href="mailto:info@privamaxsecurity.com"
               className="transition hover:text-[#d6b25e]"
             >
-              info@privamaxsecurity.co.ke
+              info@privamaxsecurity.com
             </a>
           </div>
         </div>
@@ -387,9 +387,9 @@ export default function AboutPage() {
 
               <a
                 className="block hover:text-white"
-                href="mailto:info@privamaxsecurity.co.ke"
+                href="mailto:info@privamaxsecurity.com"
               >
-                info@privamaxsecurity.co.ke
+                info@privamaxsecurity.com
               </a>
             </div>
           </div>

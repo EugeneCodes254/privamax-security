@@ -109,10 +109,10 @@ export default function TrackCargoPage() {
                 </a>
 
                 <a
-                  href="mailto:info@privamaxsecurity.co.ke"
+                  href="mailto:info@privamaxsecurity.com"
                   className="text-[#a18132] hover:text-[#10231e]"
                 >
-                  info@privamaxsecurity.co.ke
+                  info@privamaxsecurity.com
                 </a>
               </div>
             </div>

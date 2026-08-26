@@ -121,7 +121,7 @@ export default function JobsPage() {
                 </p>
 
                 <a
-                  href="mailto:info@privamaxsecurity.co.ke?subject=Career%20Application"
+                  href="mailto:info@privamaxsecurity.com?subject=Career%20Application"
                   className="mt-7 inline-flex items-center gap-2 text-sm font-bold text-[#a18132] transition group-hover:text-[#10231e]"
                 >
                   Apply Now
@@ -152,7 +152,7 @@ export default function JobsPage() {
               </p>
 
               <a
-                href="mailto:info@privamaxsecurity.co.ke?subject=General%20Career%20Application"
+                href="mailto:info@privamaxsecurity.com?subject=General%20Career%20Application"
                 className="mt-8 inline-flex items-center gap-3 rounded-full bg-[#d6b25e] px-7 py-4 font-bold text-[#10231e] transition hover:bg-white"
               >
                 Send Your CV

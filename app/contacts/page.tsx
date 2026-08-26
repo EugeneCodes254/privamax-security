@@ -135,7 +135,7 @@ export default function ContactsPage() {
               </a>
 
               <a
-                href="mailto:info@privamaxsecurity.co.ke"
+                href="mailto:info@privamaxsecurity.com"
                 className="flex items-center gap-4 rounded-2xl border border-slate-200 bg-white p-5 transition hover:-translate-y-0.5 hover:shadow-lg"
               >
                 <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#10231e] text-[#d6b25e]">
@@ -147,7 +147,7 @@ export default function ContactsPage() {
                     Email Us
                   </div>
                   <div className="mt-1 font-bold text-[#10231e]">
-                    info@privamaxsecurity.co.ke
+                    info@privamaxsecurity.com
                   </div>
                 </div>
               </a>
@@ -184,7 +184,7 @@ export default function ContactsPage() {
               </p>
             </div>
 
-            <form action="mailto:info@privamaxsecurity.co.ke" method="post" encType="text/plain" className="space-y-5">
+            <form action="mailto:info@privamaxsecurity.com" method="post" encType="text/plain" className="space-y-5">
               <div className="grid gap-5 sm:grid-cols-2">
                 <div>
                   <label
