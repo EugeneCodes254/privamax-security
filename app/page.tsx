@@ -783,6 +783,8 @@ export default function Home() {
                 +254 202 070 030
               </a>
 
+              <a className="block hover:text-white" href="tel:+256782209221">
+                +256 782 209 221
               </a>
 
               <a
