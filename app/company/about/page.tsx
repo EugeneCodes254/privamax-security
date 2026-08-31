@@ -141,7 +141,8 @@ export default function AboutPage() {
               alt="Nairobi skyline"
               className="h-full w-full object-cover brightness-[0.45] saturate-[0.6]"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#0f0f30]/90 via-[#10231e]/65 to-[#10231e]/30" />
+            <div className="pointer-events-none absolute inset-0 bg-[#10231e]/25 mix-blend-multiply" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0f0f30]/90 via-[#10231e]/65 to-[#10231e]/30" />
           </div>
 
           <div className="relative mx-auto flex min-h-[700px] max-w-7xl items-end px-6 pb-20 pt-36 lg:px-8">

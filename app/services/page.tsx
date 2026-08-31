@@ -189,9 +189,11 @@ export default function ServicesPage() {
             <img
               src="/images/hero/nairobi-skyline.jpg"
               alt="Nairobi skyline"
-              className="h-full w-full object-cover brightness-[0.42] saturate-[0.6]"
+              className="h-full w-full object-cover brightness-[0.52] saturate-[0.55] contrast-[1.08] hue-rotate-[8deg]"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#071b16]/95 via-[#10231e]/70 to-[#10231e]/30" />
+            <div className="pointer-events-none absolute inset-0 bg-[#0b2a21]/35 mix-blend-multiply" />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#071b16]/35 via-transparent to-[#10231e]/20" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#071b16]/92 via-[#10231e]/68 to-[#10231e]/34" />
             <div className="absolute inset-0 bg-gradient-to-t from-[#071b16]/55 via-transparent to-[#071b16]/15" />
           </div>
 

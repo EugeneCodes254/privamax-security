@@ -112,9 +112,9 @@ export default function PortfolioPage() {
             <img
               src="/images/hero/nairobi-skyline.jpg"
               alt="Nairobi skyline"
-              className="h-full w-full object-cover brightness-[0.42] saturate-[0.6]"
+              className="h-full w-full object-cover brightness-[0.48] saturate-[0.42] contrast-[1.04]"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#071b16]/95 via-[#10231e]/70 to-[#10231e]/30" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#071b16]/95 via-[#10231e]/78 to-[#10231e]/42" />
             <div className="absolute inset-0 bg-gradient-to-t from-[#071b16]/60 via-transparent to-transparent" />
           </div>
 

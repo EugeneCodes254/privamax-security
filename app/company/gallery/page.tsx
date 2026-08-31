@@ -106,10 +106,11 @@ export default function GalleryPage() {
             <img
               src="/images/hero/nairobi-skyline.jpg"
               alt="Nairobi skyline"
-              className="h-full w-full object-cover brightness-[0.42] saturate-[0.6]"
+              className="h-full w-full object-cover brightness-[0.52] saturate-[0.55] contrast-[1.08] hue-rotate-[8deg]"
             />
 
-            <div className="absolute inset-0 bg-gradient-to-r from-[#071b16]/95 via-[#10231e]/70 to-[#10231e]/30" />
+            <div className="pointer-events-none absolute inset-0 bg-[#10231e]/25 mix-blend-multiply" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#071b16]/92 via-[#10231e]/68 to-[#10231e]/34" />
             <div className="absolute inset-0 bg-gradient-to-t from-[#071b16]/65 via-transparent to-transparent" />
           </div>
 

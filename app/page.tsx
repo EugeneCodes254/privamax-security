@@ -289,8 +289,11 @@ export default function Home() {
             alt="Nairobi skyline"
             className="h-full w-full object-cover brightness-[0.78] saturate-[0.55] contrast-[1.06]"
           />
+          <div className="absolute inset-0 bg-[#0b2a21]/45 mix-blend-multiply" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#071b16]/85 via-[#10231e]/55 to-[#10231e]/25" />
 
           <div className="absolute inset-0 bg-[#10231e]/28" />
+          <div className="pointer-events-none absolute inset-0 bg-[#10231e]/25 mix-blend-multiply" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#071b16]/95 via-[#10231e]/68 to-[#10231e]/34" />
           <div className="absolute inset-0 bg-gradient-to-t from-[#071b16]/55 via-transparent to-[#071b16]/20" />
         </div>
