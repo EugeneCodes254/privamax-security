@@ -4,7 +4,7 @@ const services = [
   {
     number: "01",
     title: "CCTV Cameras",
-    image: "/images/services/cctv.png",
+    image: "/images/services/reference/cctv-reference.png",
     description:
       "HD surveillance systems with motion detection and instant alerts for total property monitoring.",
     features: [
@@ -18,7 +18,7 @@ const services = [
   {
     number: "02",
     title: "Electric Fence",
-    image: "/images/services/electric-fence.png",
+    image: "/images/services/reference/fence-reference.png",
     description:
       "Premium perimeter protection designed to deter unauthorized access and strengthen the security of your property.",
     features: [
@@ -32,7 +32,7 @@ const services = [
   {
     number: "03",
     title: "Fire Alarm Systems",
-    image: "/images/services/fire-alarm.jpg",
+    image: "/images/services/reference/fire-alarm-reference.jpg",
     description:
       "Active fire detection systems providing early warning and emergency protection for people, property, and business.",
     features: [
@@ -46,7 +46,7 @@ const services = [
   {
     number: "04",
     title: "Access Control",
-    image: "/images/services/access-control.png",
+    image: "/images/services/reference/access-control-reference.png",
     description:
       "Modern access management using biometric readers, smart cards, PINs, and controlled entry systems.",
     features: [
@@ -60,7 +60,7 @@ const services = [
   {
     number: "05",
     title: "Security Guarding",
-    image: "/images/services/guards.png",
+    image: "/images/services/reference/guards-reference.png",
     description:
       "Professional and highly trained security personnel providing dependable protection for homes, businesses, and institutions.",
     features: [
@@ -74,7 +74,7 @@ const services = [
   {
     number: "06",
     title: "Private Investigation",
-    image: "/images/services/bwc-camera.png",
+    image: "/images/services/private-investigation.png",
     description:
       "Discreet investigative services providing information gathering, surveillance, background checks, and evidence-based solutions.",
     features: [
@@ -88,7 +88,7 @@ const services = [
   {
     number: "07",
     title: "Cyber Security",
-    image: "/images/services/bwc-camera.png",
+    image: "/images/services/cyber-security.png",
     description:
       "Technology-driven security services designed to protect networks, systems, data, and digital assets from evolving threats.",
     features: [
@@ -102,7 +102,7 @@ const services = [
   {
     number: "08",
     title: "Drone Security & Surveillance",
-    image: "/images/services/drone-uav.png",
+    image: "/images/services/reference/drone-reference.png",
     description:
       "Advanced aerial surveillance for enhanced perimeter protection, site monitoring, and rapid incident response.",
     features: [
@@ -115,16 +115,16 @@ const services = [
   },
   {
     number: "09",
-    title: "Vehicle & Asset Tracking",
-    image: "/images/hero/TRUCK-1.JPG",
+    title: "Cash In Transit",
+    image: "/images/services/cash-in-transit.png",
     description:
-      "Tracking solutions that improve visibility, operational control, and the security of vehicles and valuable assets.",
+      "Secure and professional transportation of cash and valuable assets using trained personnel, controlled procedures, and secure transit operations.",
     features: [
-      "GPS tracking",
-      "Fleet monitoring",
-      "Real-time alerts",
-      "Asset tracking",
-      "Operational reporting",
+      "Secure cash transportation",
+      "Trained security personnel",
+      "Real-time monitoring",
+      "Secure transit procedures",
+      "Incident response support",
     ],
   },
 ];
