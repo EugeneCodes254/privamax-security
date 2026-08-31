@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap");
 @import "tailwindcss";
 
 :root {
@@ -11,13 +12,33 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 88px;
 }
 
 body {
   margin: 0;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+nav,
+.font-display {
+  font-family: "Poppins", "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 a {
@@ -25,11 +46,73 @@ a {
 }
 
 button,
-a {
+a,
+input,
+select,
+textarea {
   -webkit-tap-highlight-color: transparent;
+}
+
+button,
+a {
+  transition:
+    color 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease,
+    opacity 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease;
 }
 
 ::selection {
   background: #d6b25e;
   color: #10231e;
+}
+
+:focus-visible {
+  outline: 2px solid #d6b25e;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Privamax responsive polish */
+@media (max-width: 767px) {
+  html {
+    overflow-x: hidden;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  h1 {
+    word-break: normal;
+  }
+
+  section {
+    scroll-margin-top: 72px;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-safe {
+    min-height: 760px;
+  }
+
+  .hero-safe h1 {
+    font-size: clamp(2.75rem, 12vw, 4.25rem);
+  }
 }
