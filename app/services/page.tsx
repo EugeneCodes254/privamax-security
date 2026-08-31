@@ -4,7 +4,7 @@ const services = [
   {
     number: "01",
     title: "CCTV Cameras",
-    image: "/images/services/reference/cctv-reference.png",
+    image: "/images/services/cctv-cameras.png",
     description:
       "HD surveillance systems with motion detection and instant alerts for total property monitoring.",
     features: [
@@ -18,7 +18,7 @@ const services = [
   {
     number: "02",
     title: "Electric Fence",
-    image: "/images/services/reference/fence-reference.png",
+    image: "/images/services/electric-fence.png",
     description:
       "Premium perimeter protection designed to deter unauthorized access and strengthen the security of your property.",
     features: [
@@ -32,7 +32,7 @@ const services = [
   {
     number: "03",
     title: "Fire Alarm Systems",
-    image: "/images/services/reference/fire-alarm-reference.jpg",
+    image: "/images/services/fire-alarm-systems.png",
     description:
       "Active fire detection systems providing early warning and emergency protection for people, property, and business.",
     features: [
@@ -46,7 +46,7 @@ const services = [
   {
     number: "04",
     title: "Access Control",
-    image: "/images/services/reference/access-control-reference.png",
+    image: "/images/services/access-control.png",
     description:
       "Modern access management using biometric readers, smart cards, PINs, and controlled entry systems.",
     features: [
@@ -60,7 +60,7 @@ const services = [
   {
     number: "05",
     title: "Security Guarding",
-    image: "/images/services/reference/guards-reference.png",
+    image: "/images/services/security-guarding.png",
     description:
       "Professional and highly trained security personnel providing dependable protection for homes, businesses, and institutions.",
     features: [
@@ -102,7 +102,7 @@ const services = [
   {
     number: "08",
     title: "Drone Security & Surveillance",
-    image: "/images/services/reference/drone-reference.png",
+    image: "/images/services/drone-security-surveillance.png",
     description:
       "Advanced aerial surveillance for enhanced perimeter protection, site monitoring, and rapid incident response.",
     features: [
