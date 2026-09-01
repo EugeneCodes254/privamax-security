@@ -116,7 +116,7 @@ const services = [
   {
     number: "09",
     title: "Cash In Transit",
-    image: "/images/services/cash-in-transit.png",
+    image: "/images/services/cash-in-transit.jpg",
     description:
       "Secure and professional transportation of cash and valuable assets using trained personnel, controlled procedures, and secure transit operations.",
     features: [
