@@ -1,4 +1,14 @@
+import type { Metadata } from "next";
 import Header from "@/components/Header";
+
+export const metadata: Metadata = {
+  title: "Security Services in Kenya | CCTV, Guarding & Cyber Security",
+  description:
+    "Explore Privamax Security's professional security services in Kenya, including guarding, CCTV surveillance, access control, electric fencing, fire alarms, private investigations, cyber security, drone surveillance and cash in transit.",
+  alternates: {
+    canonical: "https://privamaxsecurity.com/services",
+  },
+};
 
 const services = [
   {
