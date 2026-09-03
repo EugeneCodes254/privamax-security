@@ -1,4 +1,14 @@
+import type { Metadata } from "next";
 import Header from "@/components/Header";
+
+export const metadata: Metadata = {
+  title: "Insurance Investigations Kenya | Claims & Fraud Investigations",
+  description:
+    "Privamax Security provides professional insurance investigations in Kenya, including claims investigation, fraud detection, accident and motor claims, surveillance, background checks and corporate investigations.",
+  alternates: {
+    canonical: "https://privamaxsecurity.com/insurance",
+  },
+};
 
 const services = [
   {
