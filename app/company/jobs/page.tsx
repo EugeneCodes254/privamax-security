@@ -123,7 +123,7 @@ export default function JobsPage() {
                 </a>
 
                 <a
-                  href="mailto:info@privamaxsecurity.com?subject=Career%20Application"
+                  href="mailto:hr@privamaxsecurity.com?subject=Career%20Application"
                   className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/5 px-8 py-4 font-bold text-white backdrop-blur-sm transition hover:bg-white hover:text-[#10231e]"
                 >
                   Send Your CV
@@ -207,7 +207,7 @@ export default function JobsPage() {
                 </p>
 
                 <a
-                  href="mailto:info@privamaxsecurity.com?subject=Career%20Application"
+                  href="mailto:hr@privamaxsecurity.com?subject=Career%20Application"
                   className="mt-7 inline-flex items-center gap-2 text-sm font-bold text-[#10231e] transition hover:text-[#a18132]"
                 >
                   Apply Now
@@ -244,7 +244,7 @@ export default function JobsPage() {
               </p>
 
               <a
-                href="mailto:info@privamaxsecurity.com?subject=General%20Career%20Application"
+                href="mailto:hr@privamaxsecurity.com?subject=General%20Career%20Application"
                 className="mt-8 inline-flex items-center gap-3 rounded-full bg-[#d6b25e] px-8 py-4 font-bold text-[#10231e] transition hover:brightness-110"
               >
                 Send Your CV
@@ -295,7 +295,7 @@ export default function JobsPage() {
             </p>
 
             <a
-              href="mailto:info@privamaxsecurity.com?subject=General%20Career%20Application"
+              href="mailto:hr@privamaxsecurity.com?subject=General%20Career%20Application"
               className="mt-8 inline-flex items-center gap-3 rounded-full bg-[#10231e] px-8 py-4 font-bold text-white transition hover:bg-[#071b16]"
             >
               Send Your CV
