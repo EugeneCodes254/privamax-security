@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 const siteUrl = "https://privamaxsecurity.com";
-const lastModified = new Date("2026-09-03T00:00:00+03:00");
+const lastModified = new Date("2026-09-05T00:00:00+03:00");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${siteUrl}/company/about`, lastModified, changeFrequency: "monthly", priority: 0.9 },
     { url: `${siteUrl}/services`, lastModified, changeFrequency: "monthly", priority: 0.95 },
     { url: `${siteUrl}/insurance`, lastModified, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${siteUrl}/certifications`, lastModified, changeFrequency: "monthly", priority: 0.85 },
     { url: `${siteUrl}/blog`, lastModified, changeFrequency: "weekly", priority: 0.85 },
     { url: `${siteUrl}/contacts`, lastModified, changeFrequency: "monthly", priority: 0.8 },
     { url: `${siteUrl}/track-cargo`, lastModified, changeFrequency: "weekly", priority: 0.75 },
