@@ -25,6 +25,7 @@ export const metadata: Metadata = {
     "private investigation Kenya",
     "cyber security Kenya",
     "cash in transit Kenya",
+    "ISO 9001:2015 certified security company Kenya",
   ],
   applicationName: "Privamax Security Firm Limited",
   authors: [{ name: "Privamax Security Firm Limited" }],
@@ -97,6 +98,17 @@ const organizationSchema = {
     addressLocality: "Nairobi",
     addressCountry: "KE",
   },
+  hasCredential: {
+    "@type": "EducationalOccupationalCredential",
+    credentialCategory: "ISO 9001:2015 Quality Management System Certification",
+    identifier: "KE002742",
+    recognizedBy: {
+      "@type": "Organization",
+      name: "Bureau Veritas Certification Holding SAS - UK Branch",
+    },
+    validFrom: "2026-08-04",
+    expires: "2029-04-02",
+  },
   sameAs: [
     "https://www.linkedin.com/company/privamax-security-firm-ltd/",
     "https://www.facebook.com/profile.php?id=100094909293959",
@@ -115,6 +127,36 @@ export default function RootLayout({
     <html lang="en-KE">
       <body>
         {children}
+
+        <section
+          aria-label="ISO certification"
+          className="border-t border-[#d6b25e]/20 bg-[#071b16] px-6 py-5 text-white"
+        >
+          <div className="mx-auto flex max-w-7xl flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <div className="flex items-center gap-3">
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#d6b25e]/40 bg-[#d6b25e]/10 text-xs font-extrabold text-[#d6b25e]">
+                ISO
+              </span>
+              <div>
+                <div className="text-sm font-extrabold tracking-wide text-white">
+                  ISO 9001:2015 CERTIFIED
+                </div>
+                <div className="text-xs text-white/50">
+                  Quality Management System · Certificate KE002742
+                </div>
+              </div>
+            </div>
+
+            <a
+              href="/certifications"
+              className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[#d6b25e] transition hover:text-white"
+            >
+              View Certification
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </section>
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
